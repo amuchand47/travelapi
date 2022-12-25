@@ -1,11 +1,8 @@
 const mongoose = require("mongoose");
 const dotenv = require("dotenv")
 
-// connect to localhost database
-
+// connect to localhost database using URL
 // const dbLocalUrl = "mongodb://localhost:27017/travel-api"; 
-
-//`mongodb+srv://amuchand47:Chandcalifornia@cluster0.j3cxb4l.mongodb.net/${dbName}?retryWrites=true&w=majority`;
 
 const dbName = "travel-api";
 
