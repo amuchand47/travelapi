@@ -20,7 +20,8 @@ router.get("/", (req, res)=>{
 // add city post request  i,e create a new city 
 
 router.post("/addcity", (req, res)=>{
-
+    
+    console.log(req.body);
     const city = new City(req.body);  // create user 
 
     city.save().then(()=>{  // then save data on server 
@@ -30,6 +31,7 @@ router.post("/addcity", (req, res)=>{
     }).catch((e)=>{
         
         res.status(400).send(e);
+        console.log("error")
     
     });
 
